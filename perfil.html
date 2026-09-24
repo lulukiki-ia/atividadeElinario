@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conta de Teste</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+ 
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dadde0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+ 
+  .card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding-bottom: 32px;
+  }
+ 
+  .banner {
+    margin: 16px;
+    background: #f5c518;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+ 
+  .banner span {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1a2b4c;
+  }
+ 
+  .avatar-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+  }
+ 
+  .avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #d7e6f7;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+  }
+ 
+  .avatar svg {
+    width: 100%;
+    height: 100%;
+  }
+ 
+  .name {
+    text-align: center;
+    margin: 18px 0 4px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #1a2b4c;
+  }
+ 
+  .role {
+    text-align: center;
+    margin: 0 0 16px;
+    font-size: 15px;
+    color: #8a94a6;
+  }
+ 
+  .bio {
+    text-align: center;
+    margin: 0 32px 24px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+  }
+ 
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding: 0 24px;
+  }
+ 
+  .btn {
+    flex: 1;
+    max-width: 150px;
+    padding: 13px 0;
+    border: none;
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: filter 0.15s ease;
+  }
+ 
+  .btn:hover {
+    filter: brightness(0.92);
+  }
+ 
+  .btn-message {
+    background: #1e63d0;
+  }
+ 
+  .btn-connect {
+    background: #2e8b3f;
+  }
+</style>
+</head>
+<body>
+ 
+  <div class="card">
+    <div class="banner">
+      <span>Conta de Teste</span>
+    </div>
+ 
+    <div class="avatar-wrap">
+      <div class="avatar">
+        <svg viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="65" cy="65" r="65" fill="#d7e6f7"/>
+          <path d="M65 30c-18 0-28 14-28 32 0 6 1 11 3 15 8 10 15 13 25 13s17-3 25-13c2-4 3-9 3-15 0-18-10-32-28-32z" fill="#1b2f5e"/>
+          <circle cx="65" cy="66" r="24" fill="#ffffff"/>
+          <path d="M65 42c-13 0-20 11-20 24 0 5 1 9 2 11 3-2 6-5 6-9v-8c4 2 9 3 12 3s8-1 12-3v8c0 4 3 7 6 9 1-2 2-6 2-11 0-13-7-24-20-24z" fill="#1b2f5e"/>
+          <path d="M20 130c0-24 20-38 45-38s45 14 45 38z" fill="#5b9bf0"/>
+          <path d="M20 130c0-24 20-38 45-38v38z" fill="#4a8ce8"/>
+        </svg>
+      </div>
+    </div>
+ 
+    <h1 class="name">Ana Silva</h1>
+    <p class="role">Desenvolvedora Web</p>
+    <p class="bio">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+ 
+    <div class="actions">
+      <button class="btn btn-message" onclick="alert('Abrir mensagem')">Mensagem</button>
+      <button class="btn btn-connect" onclick="alert('Conectado!')">Conectar</button>
+    </div>
+  </div>
+ 
+</body>
+</html>
